@@ -1,0 +1,24 @@
+
+import random
+
+def adivina_el_numero(x):
+    
+    
+    print("Bienvenides al juego")
+    print("  ")
+    print("Tendras que adivinar un numero random computado por la computadora")
+
+    numero_compu = random.randint(1, x)
+
+    numero_usuario = 0
+
+    while numero_usuario != numero_compu:
+        numero_usuario = int(input (f'Adivina el numero entre 1 y {x}: ') )
+        if numero_usuario > numero_compu:
+            print ("Tu numero es muy alto")
+        elif numero_usuario < numero_compu:
+            print ("Tu numero es muy bajo ")
+    
+    print(f"¡ Felicitaciones adivinaste el numero que predijo la Computadora ! Era numero era el {numero_usuario} ")
+
+adivina_el_numero(8)
