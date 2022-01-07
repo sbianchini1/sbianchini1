@@ -1,0 +1,7 @@
+
+nombre = input ("Introduzca su nombre ")
+verbo = input ("Introduzca un verbo ")
+sustantivo = input ("Intoduzca un sustantivo ")
+
+print (f"Hola {nombre}  me contaron que te gusta {verbo} con  {sustantivo}" )
+
