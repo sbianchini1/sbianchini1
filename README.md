@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @sbianchini1
 - 👀 I’m interested in be devoloper
 - 🌱 I’m currently learning python
-- 💞️ I’m looking to collaborate on any proyrcect to practic and lernin python
+- 💞️ I’m looking to collaborate on any proyect to practic and lernin python
 - 📫 How to reach me https://www.linkedin.com/in/sebastian-luis-bianchini/
 
 <!---
