@@ -1,0 +1,33 @@
+import random
+
+
+def jugar():
+    usuario = input("Escoge una opción: Piedra, Papel o Tijera.\n").lower()
+    # \n --> la linea que ingrese el usuario va a quedar debajo del input
+    # .lower() convierte lo que ingrese el usuario en miniscula
+    computadora = random.choice(['pieda', 'papel', 'tijera'])
+
+    print(f"La computadora eligio {computadora}")
+
+   
+    if usuario == computadora:
+        return '¡Empate!'
+    if ganó_el_jugador(usuario, computadora):
+        return '¡Ganaste!'
+    return '¡Perdiste!'
+
+
+def ganó_el_jugador(jugador, oponente):
+    # Retornar True (verdadero) si gana el jugador.
+    # Piedra gana a Tijera.
+    # Tijera gana a Papel.
+    # Papel gana a Piedra.
+    if ((jugador == 'piedra' and oponente == 'tijera')
+        or (jugador == 'tijera' and oponente == 'papel')
+        or (jugador == 'papel' and oponente == 'pedra')):
+        return True
+    else:
+        return False
+
+
+print(jugar())
